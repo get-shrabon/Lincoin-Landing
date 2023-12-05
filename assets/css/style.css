@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+/* ROOT STYLE */
+.border-right {
+  border-right: 1px solid #c2c3d3a1;
+}
+.border-bottom {
+  border-bottom: 1px solid #c2c3d3a1;
+}
+.border-left {
+  border-left: 1px solid #c2c3d3a1;
+}
+.btn-close {
+  background-image: unset !important;
+}
+.noReapet_cover_center {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.primary__color {
+  color: #2c333c;
+}
+.secondary__color {
+  color: #616161;
+}
+.f__20 {
+  font-size: 20px;
+}
+.primary__btn {
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  background-color: #2c333c;
+  color: white;
+  transition: 0.3s all;
+  border: none;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  padding: 33px 70px;
+}
+.primary__btn:hover {
+  background-color: #1e2228;
+}
+.secondary__btn {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  color: #2c333c;
+  transition: 0.3s all;
+  border: 2px solid #2c333c;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 8px;
+  letter-spacing: 1.4px;
+  padding: 13px 0;
+}
+/**************************** Header All CSS here ******************************/
+header {
+  border-bottom: 0.5px solid rgba(221, 221, 226, 0.2);
+  background: #2c333c;
+  padding: 10px 0;
+}
+nav .offcanvas {
+  background: #2c333c;
+}
+nav .nav-link {
+  color: white;
+}
+nav .nav-link:hover {
+  color: white !important;
+}
+nav .nav-link:visited {
+  color: white !important;
+}
+/* Header css End */
+
+/*********************************** Hero Container Style Here *********************************** */
+.hero__container {
+  background-color: #23292f;
+  padding: 50px 0;
+}
+.slide1 {
+  background-image: url("../images/heroCar.png");
+}
+.slide2 {
+  background-image: linear-gradient(black, rgb(67, 25, 25));
+}
+.slide3 {
+  background-image: linear-gradient(black, rgb(25, 67, 31));
+}
+.hero__container .swiper-slide {
+  height: 465px;
+}
+.hero__right {
+  background: #efefef;
+  box-shadow: 2px 2px 46px 19px rgba(18, 15, 36, 0.2);
+}
+.swiper-slide h3 {
+  font-size: 35px;
+  font-weight: 300;
+}
+.swiper-wrapper {
+  background-color: white;
+  padding: 5px;
+}
+.delivery__bg {
+  height: 150px !important;
+  width: 150px !important;
+  background-image: url("../images/deliveryBG.png");
+}
+.ragular__bg {
+  height: 150px !important;
+  width: 150px !important;
+  background-image: url("../images/ragularBG.png");
+}
+.cta__container {
+  background: #fff;
+  box-shadow: 2px 2px 46px 19px rgba(18, 15, 36, 0.2);
+  position: relative;
+  margin-bottom: -150px;
+}
+/*********************************** Hero Container Style End *********************************** */
+/*********************************** Servicing Container Style Start *********************************** */
+.servicing__container {
+  background: #f1f1f1;
+  padding: 150px 0 65px 0;
+}
+.service__title {
+  color: #2c333c;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 3.5px;
+}
+.service__items .service__img{
+  width: 90px;
+  height: 90px;
+}
+/*********************************** Servicing Container Style End *********************************** */
+/***************************** Footer Style Start **************************/
+footer {
+  background-color: #1e1e1e;
+  padding: 25px 0;
+}
+footer a {
+  color: white;
+}
+
+/* responsive css */
+
+@media screen and (max-width: 576px) {
+  .footer__contents {
+    flex-direction: column !important;
+    justify-content: center;
+  }
+  .footer__links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .row {
+    gap: 15px !important;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .footer__links a {
+    font-size: 10px !important;
+    white-space: nowrap;
+  }
+  .delivery__bg, .ragular__bg{
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .hero__right__box{
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .hero__right__box h4{
+    font-size: 20px;
+  }
+  .servicing__container .border-right{
+    border: none;
+  }
+}
