@@ -43,7 +43,7 @@ body {
   transition: 0.3s all;
   border: none;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 800;
   letter-spacing: 1.4px;
   padding: 33px 70px;
@@ -58,7 +58,7 @@ body {
   color: #2c333c;
   transition: 0.3s all;
   border: 2px solid #2c333c;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 800;
   border-radius: 8px;
   letter-spacing: 1.4px;
@@ -100,6 +100,15 @@ nav .nav-link:visited {
 }
 .hero__container .swiper-slide {
   height: 465px;
+  position: relative;
+}
+.swiper__btns {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
 }
 .hero__right {
   background: #efefef;
@@ -142,7 +151,7 @@ nav .nav-link:visited {
   font-weight: 400;
   letter-spacing: 3.5px;
 }
-.service__items .service__img{
+.service__items .service__img {
   width: 90px;
   height: 90px;
 }
@@ -174,24 +183,45 @@ footer a {
   .row {
     gap: 15px !important;
   }
+  .swiper-slide h3 {
+    font-size: 25px;
+    font-weight: 300;
+  }
+  .swiperSlide .p-5 {
+    padding: 10px !important;
+  }
+  .swiper__btns {
+    top: 45%;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .footer__links a {
     font-size: 10px !important;
     white-space: nowrap;
   }
-  .delivery__bg, .ragular__bg{
+  .delivery__bg,
+  .ragular__bg {
     width: 100px !important;
     height: 100px !important;
   }
-  .hero__right__box{
+  .hero__right__box {
     flex-direction: column !important;
     text-align: center;
   }
-  .hero__right__box h4{
+  .hero__right__box h4 {
     font-size: 20px;
   }
-  .servicing__container .border-right{
+  .servicing__container .border-right {
     border: none;
+  }
+  .swiperSlide .p-5 {
+    padding: 10px !important;
+  }
+  .swiper__btns {
+    top: 45%;
+  }
+  .primary__btn {
+    font-size: 14px;
+    white-space: nowrap;
   }
 }

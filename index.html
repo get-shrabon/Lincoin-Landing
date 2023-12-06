@@ -123,8 +123,10 @@
                       </h3>
                     </div>
                   </div>
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
+                  <div class="swiper__btns d-flex justify-content-between text-white p-5">
+                    <span class="swiper-next"><i class="fa-solid fa-angle-left fa-2xl"></i></span>
+                    <span class="swiper-prev"><i class="fa-solid fa-angle-right fa-2xl"></i></span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -272,8 +274,8 @@
         spaceBetween: 30,
         effect: "fade",
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-next",
+          prevEl: ".swiper-prev",
         },
         loop: true,
       });
